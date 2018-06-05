@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/inventory-form', 'InventoryController@show_form');
+
+Route::post('/save-inventory', 'InventoryController@store');
